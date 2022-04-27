@@ -1,0 +1,36 @@
+// variable ===============================
+$default__textColor: rgb(57, 57, 57);
+$default__mainBackground: #ddd;
+$default__subBackground: #ddd;
+// mixin ==================================
+// animation ==============================
+// common =================================
+h1,h2,h3,h4,h5,p{
+  margin: 0 0 15px 0;
+  &:last-of-type{
+    margin: 0;
+  }
+}
+.header{
+  background: $default__mainBackground;
+  padding: 15px 0;
+}
+.footer{
+  background: $default__mainBackground;
+  padding: 15px 0;
+}
+
+.todo-list{
+  text-align: center;
+  .todo-item{
+    font-family: 'Helvetica Neue';
+    font-size: 24px;
+    font-weight: 300;
+    color: #4d4d4d;
+    margin-bottom: 15px;
+    &.active{
+      text-decoration: line-through;
+      opacity: 0.3;
+    }
+  }
+}

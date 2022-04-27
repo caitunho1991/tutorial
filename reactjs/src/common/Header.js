@@ -1,0 +1,12 @@
+import React from "react";
+import { Container } from "react-bootstrap";
+
+export default function Header(props) {
+    return(
+        <div className="header">
+            <Container fluid>
+                <p>Header</p>
+            </Container>
+        </div>
+    );
+}
